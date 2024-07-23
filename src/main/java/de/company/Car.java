@@ -2,8 +2,12 @@ package de.vimo;
 
 public class Car {
     private SilverWheel silverWheel;
+    private BlackWheel blackWheel;
     public Car(SilverWheel silverWheel) {
         this.silverWheel = silverWheel;
+    }
+    public Car(BlackWheel blackWheel) {
+        this.blackWheel = blackWheel;
     }
 
     BlackSeat driverSeat = new BlackSeat();
@@ -14,6 +18,9 @@ public class Car {
     }
     public String getSilverWheel() {
         return silverWheel.getSilverWheel();
+    }
+    public String getBlackWheel() {
+        return blackWheel.getBlackWheel();
     }
 
 }

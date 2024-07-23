@@ -6,17 +6,13 @@ public class CarTest
     public static void main(String[] args )
     {
         SilverWheel silverWheel = new SilverWheel();
-        BlackWheel blackWheel = new BlackWheel();
-        Car carSilver = new Car(silverWheel);
-        Car carBlack = new Car(blackWheel);
+        Car car = new Car(silverWheel);
 
-        System.out.println(carSilver.getSilverWheel());
+        System.out.println(car.getSilverWheel());
 
-        System.out.println(carBlack.getBlackWheel());
-
-        BlackSeat driverSeat = carBlack.getDriverSeat();
+        BlackSeat driverSeat = car.getDriverSeat();
         driverSeat.sitDown();
-        System.out.println(carBlack.getDriverSeat().isSitDown());
+        System.out.println(car.getDriverSeat().isSitDown());
         driverSeat.standUp();
         System.out.println(driverSeat.isSitDown());
     }

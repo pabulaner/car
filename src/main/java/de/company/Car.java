@@ -8,6 +8,7 @@ public class Car {
     private Wheel wheelFrontRight;
     private Wheel wheelRearLeft;
     private Wheel wheelRearRight;
+    private BlackSeat driverSeat;
 
 
     public Car(Wheel wheelFrontLeft, Wheel wheelFrontRight) {
@@ -17,10 +18,11 @@ public class Car {
         } else if (wheelFrontRight == silverWheelFrontRight) {
             this.wheelFrontRight = wheelFrontRight;
             //blackWheelFrontLeft = new BlackWheel();
+            BlackSeat driverSeat = new BlackSeat();
+            BlackSeat passengerSeat = new BlackSeat();
         }
     }
-    BlackSeat driverSeat = new BlackSeat();
-    BlackSeat passengerSeat = new BlackSeat();
+   
 
     public BlackSeat getDriverSeat() {
         return driverSeat;

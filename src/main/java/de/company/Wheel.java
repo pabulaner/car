@@ -1,6 +1,8 @@
 package de.vimo;
 
-public class Wheel {
-
-
+public interface Wheel {
+    String getColor();
+    boolean isWheel();
+    void setWheel(Wheel wheel);
+    String getWheel();
 }

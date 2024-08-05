@@ -1,12 +1,23 @@
 package de.vimo;
 
-public class SilverWheel extends Wheel {
+public class SilverWheel implements Wheel {
     int red = 0;
     int blue = 90;
     int green = 10;
-
-    public String getSilverWheel() {
-        return "wheel is silver with red " + red + " blue " + blue + " and green " + green;
+    String silverWheel = "silverwheel";
+    private boolean isSilverWheel;
+    public String getColor() {
+        System.out.println(red);
+        return red + "red";
     }
-
+    public boolean isWheel() {
+        return isSilverWheel;
+    }
+    public void setWheel(Wheel wheel) {
+        isSilverWheel = true;
+        System.out.println("isSilverWheel " + isSilverWheel + " setWheel ");
+    }
+    public String getWheel() {
+        return silverWheel;
+    }
 }

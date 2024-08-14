@@ -1,13 +1,16 @@
-package de.company;
+package de.vimo;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        MyCar myCarBlack = new MyCar(new BlackWheel());
+        System.out.println(myCarBlack.getFrontLeftWheel().getColor());
+        System.out.println(myCarBlack.getFrontRightWheel().getColor());
+
+        MyCar myCarSilver = new MyCar(new SilverWheel());
+        System.out.println(myCarSilver.getBackLeftWheel().getColor());
+        System.out.println(myCarSilver.getBackRightWheel().getColor());
     }
 }

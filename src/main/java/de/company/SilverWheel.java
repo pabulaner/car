@@ -4,7 +4,7 @@ public class SilverWheel implements Wheel{
     int red = 0;
     int blue = 90;
     int green = 10;
-    long serialNumber = 238764169l;
+    long serialNumber = 238764169L;
     double diameter = 33.2;
     String color = "silverWheel";
 

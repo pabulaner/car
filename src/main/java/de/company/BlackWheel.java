@@ -5,8 +5,9 @@ public class BlackWheel implements Wheel{
     int blue = 0;
     int green = 0;
     String color = "blackWheel";
-    long serialNumber = 222222l;
+    long serialNumber = 4444L;
     double diameter = 52.2;
+
 
     @Override
     public long getSerialNumber() {
